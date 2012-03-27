@@ -7,7 +7,7 @@ body {
 
 #page {
 	position: absolute;
-	height: 90%;
+	height: 99%;
 	width: 100%;
 	top: 0px;
 	left: 0px;
@@ -46,13 +46,6 @@ body {
 svg {
 	position: absolute;
 	background: #FFF;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-top-right-radius: 40px 10px;
-	border-bottom-right-radius: 40px 10px;
-	-moz-box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.4);
-	-webkit-box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.4);
-	box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.4);
 }
 
 .font-control {
@@ -86,41 +79,26 @@ svg {
 	background-image: url('../img/minus.png');
 }
 
-#instructions {
-	position: absolute;
-	top: -2em;
-	text-align: right;
-	right: 0;
-	width: 100%;
-	font-size: 0.9em;
-	line-height: 1.35em;
-	color: white;
-	text-decoration: none;
-	font-family: Arial, sans-serif;
+#attribution, #attribution a {
+    font-size: 0.9em;
+    line-height: 1.35em;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
-#aboutAndAttribution {
-	position: absolute;
-	bottom: -1em;
-	width: 100%;
-	font-size: 0.9em;
-	line-height: 1.35em;
-	color: white;
-	text-decoration: none;
-	font-family: Arial, sans-serif;
-}
-
-#aboutAndAttribution a {
-	color: white;
-	text-decoration: underline;
+#attribution a {
+    color: white;
+    text-decoration: underline;
 }
 
 #attribution {
-	position: absolute;
-	left: 0;
-}
-
-#about {
-	position: absolute;
-	right: 0;
+    background: black;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding: 6px;
+    opacity: .5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
 }
