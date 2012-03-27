@@ -57,7 +57,9 @@ function redrawSvg() {
 		// save it in local storage
 		setLocalStorageValue('code', thisCode);
 	}
-	catch (error) {}
+	catch (error) {
+        console.log(error);
+    }
 	finally {};
 }
 
@@ -69,11 +71,11 @@ $(window).on('resize', function() {
 	redrawSvg();
 });
 
-d3.text('../static/submodule/water/data/chord.txt', function(data) {
-
-	// do we have stored code? if not, set the demo code
-	window.aceEditor.getSession().setValue(getLocalStorageValue('code') ? getLocalStorageValue('code') : data);
-});
+//d3.text('../static/submodule/water/data/chord.txt', function(data) {
+//
+//	// do we have stored code? if not, set the demo code
+//	window.aceEditor.getSession().setValue(getLocalStorageValue('code') ? getLocalStorageValue('code') : data);
+//});
 
 // local storage getter/setter
 function getLocalStorageValue(key) {
