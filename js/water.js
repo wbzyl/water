@@ -47,9 +47,12 @@ $(window).on('resize', function() {
 	redrawSvg();
 });
 
-d3.text('data/barchart.js', function(data) {
-	window.aceEditor.getSession().setValue(data);
-});
+if (window.location.hash) {
+    var filename = window.location.hash.substring(1);
+    d3.text('examples/' + filename +'.js', function(data) {
+        window.aceEditor.getSession().setValue(data);
+    });
+}
 
 // turn off horizontal scrollbar
 window.aceEditor.renderer.setHScrollBarAlwaysVisible(false);
