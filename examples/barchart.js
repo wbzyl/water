@@ -1,4 +1,4 @@
-var data = pv.range(20).map(function(d) { return Math.random() + 0.1; });
+var data = [ 1.1, 1.2, 0.8 ];
 
 /* Sizing and scales. */
 var w = 400,
