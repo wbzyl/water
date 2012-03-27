@@ -110,10 +110,4 @@ $('body').on('focus click', function(e) {
 	onNumeric = false;
 });
 
-// pulse numeric constants (until user clicks on them)
-var pulseNumerics = true;
-var pulse = setInterval(function() {
-	$('.ace_numeric').animate({opacity: 0.5}).animate({opacity: 1});
-}, 1000);
-
 });
