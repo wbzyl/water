@@ -1,6 +1,6 @@
 # water
 
-Live coding sketchpad for protovis. Code modifications are instantly displayed - no need to refresh your browser.
+Live coding sketchpad for <a href="http://mbostock.github.com/protovis/">Protovis</a>. Code modifications are instantly displayed - no need to refresh your browser.
 
 Based on Gabriel Florit's <a href='https://github.com/gabrielflorit/water'>Water</a> live coding sketchpad (**<a href='http://gabrielflor.it/water'>original water</a>**)
 
