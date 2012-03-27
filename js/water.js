@@ -32,9 +32,6 @@ function redrawSvg() {
 
 		// run it
 		eval(thisCode);
-
-		// save it in local storage
-		setLocalStorageValue('code', thisCode);
 	}
 	catch (error) {
         console.log(error);
@@ -50,32 +47,15 @@ $(window).on('resize', function() {
 	redrawSvg();
 });
 
-//d3.text('../static/submodule/water/data/chord.txt', function(data) {
-//
-//	// do we have stored code? if not, set the demo code
-//	window.aceEditor.getSession().setValue(getLocalStorageValue('code') ? getLocalStorageValue('code') : data);
-//});
-
-// local storage getter/setter
-function getLocalStorageValue(key) {
-	var localStorageKey = 'gabrielflor.it/water1';
-	return localStorage.getItem([localStorageKey, key].join('/'));
-}
-function setLocalStorageValue(key, value) {
-	var localStorageKey = 'gabrielflor.it/water1';
-	localStorage.setItem([localStorageKey, key].join('/'), value);
-}
+d3.text('data/barchart.js', function(data) {
+	window.aceEditor.getSession().setValue(data);
+});
 
 // turn off horizontal scrollbar
 window.aceEditor.renderer.setHScrollBarAlwaysVisible(false);
 
 // turn off print margin visibility
 window.aceEditor.setShowPrintMargin(false);
-
-// load font-size from local storage
-if (getLocalStorageValue('font-size')) {
-	$('#editor').css('font-size', getLocalStorageValue('font-size'));
-}
 
 // increase/decrease font
 $('.font-control').on('click', function(e) {
@@ -86,8 +66,6 @@ $('.font-control').on('click', function(e) {
 	} else {
 		$('#editor').css('font-size', '+=1');
 	}
-
-	setLocalStorageValue('font-size', $('#editor').css('font-size'));
 });
 
 // from https://github.com/ajaxorg/ace/issues/305
