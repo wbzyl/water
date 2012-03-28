@@ -1,39 +1,39 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
 <html>
-<head>
+  <head>
     <meta charset='utf-8' />
-    <title>Protovis Sketchpad</title>
+    <title>d3.js sketchpad</title>
     <link rel='stylesheet' type='text/css' href='http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css' />
     <link rel='stylesheet' type='text/css' href='css/water.css' />
-</head>
-<body>
+  </head>
+  <body>
     <div id='page'>
-        <div id='display'>
-            <svg></svg>
+      <div id='display'>
+        <svg></svg>
+      </div>
+      <div id='editor'>
+      </div>
+      <div>
+        <a class='increase font-control' href='#'>+</a>
+        <a class='decrease font-control' href='#'>-</a>
+      </div>
+      <div id='aboutAndAttribution'>
+        <div id='attribution'>
+          <a href='https://github.com/lgrammel/water'>source code on github</a>
+          &nbsp;&nbsp;&nbsp;
+          <a href='https://github.com/gabrielflorit/water'>based on Gabriel Florit's Water</a>
         </div>
-        <div id='editor'>
-        </div>
-        <div>
-            <a class='increase font-control' href='#'>+</a>
-            <a class='decrease font-control' href='#'>-</a>
-        </div>
-        <div id='aboutAndAttribution'>
-            <div id='attribution'>
-                <a href='https://github.com/lgrammel/water'>source code on github</a>
-                &nbsp;&nbsp;&nbsp;
-                <a href='https://github.com/gabrielflorit/water'>based on Gabriel Florit's Water</a>
-            </div>
-        </div>
+      </div>
     </div>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
     <script src='js/jquery.hotkeys.js'></script>
-    <script src='js/protovis.min.js'></script>
+    <script src='slider/js/jquery.ui.slider.js'></script>
     <script src='js/d3.v2.min.js'></script>
     <script src='js/ace/ace.js'></script>
     <script src='js/ace/theme-twilight.js'></script>
     <script src='js/ace/mode-javascript.js'></script>
-	<script>
-		$.getScript('js/water.js');
-	</script>
-</body>
+    <script>
+      $.getScript('js/water.js');
+    </script>
+  </body>
 </html>
