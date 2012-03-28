@@ -8,8 +8,12 @@ The beautiful code editor, <a href='http://ace.ajax.org/'>Ace</a>, is an open so
 
 ### Setup
 
-Any static file web server will work - for example,
+Any static file web server will work - for example *Serve* for NodeJS,
 
-    python -m SimpleHTTPServer 8888
+    serve
 
-Then hit http://localhost:8888/water.html and start coding!
+Then hit http://localhost:3000/water.html and start coding!
+
+Install serve with [NPM](http://npmjs.org/):
+
+    npm install -g serve
