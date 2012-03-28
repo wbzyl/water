@@ -33,7 +33,7 @@ body {
 	border: solid #FFF 1px;
 	border-left: none;
 	background: white;
-	background: #141414;
+	// background: #141414;
 
 	font-size: 1em; /* TODO: replace with localstorage */
 }
