@@ -15,7 +15,15 @@ Any static file web server will work, for example *Serve* for NodeJS:
 
     serve
 
-Then hit *http://localhost:3000/water.html* and start coding!
+Then hit
+
+    http://localhost:3000/water.html
+
+or try
+
+    http://localhost:3000/water.html#rect-00
+
+and start coding!
 
 Install *Serve* with [NPM](http://npmjs.org/):
 
