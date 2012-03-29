@@ -17,7 +17,7 @@ window.aceEditor = ace.edit("editor");
 
 // set the theme
 // window.aceEditor.setTheme("ace/theme/twilight");
-window.aceEditor.setTheme("ace/theme/crimson_editor");
+window.aceEditor.setTheme("ace/theme/vibrant_ink");
 
 // set mode to javascript
 var JavaScriptMode = require("ace/mode/javascript").Mode;
