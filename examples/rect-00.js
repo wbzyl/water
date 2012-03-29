@@ -18,10 +18,13 @@ var data = [
 svg.selectAll("rect")
     .data(data)
   .enter().append("rect")
+    .attr("class", "signpost")
     .attr("x", function(d) { return d.x; })
     .attr("y", function(d) { return d.y; })
     .attr("height", function(d) { return d.height; })
     .attr("width", function(d) { return d.width; })
-    .style("fill", function(d) { return d.fill; })
-    .attr("stroke-width", 2)
-    .attr("stroke", "#222");
+    .style("fill", function(d) { return d.fill; });
+
+$('.signpost').css('fill-opacity', 0.9);
+$('.signpost').css('stroke', '#222');
+$('.signpost').css('stroke-width', 2);
