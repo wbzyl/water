@@ -28,7 +28,7 @@ and start coding!
 Install *Serve* with [NPM](http://npmjs.org/):
 
     npm install -g serve
-    
+
 ### Git Tips
 
 * [How to „Merge” Specific Files from Another Branch](http://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/)
@@ -40,4 +40,32 @@ Merging changes from the master branch:
     git status
     git diff --cached
     // git add README.md, git add --interactive
-    
+
+## Heroku
+
+Aplikację wdrożyłem na Heroku.
+
+Przykładowo, przykład *examples/circle-05.js* wpisujemy tak:
+
+    http://deep-water.herokuapp.com/#circle-05
+
+Plik *.git/config*:
+
+    [core]
+            repositoryformatversion = 0
+            filemode = true
+            bare = false
+            logallrefupdates = true
+    [remote "origin"]
+            fetch = +refs/heads/*:refs/remotes/origin/*
+            url = git@github.com:wbzyl/water.git
+    [branch "master"]
+            remote = origin
+            merge = refs/heads/master
+    [remote "heroku"]
+            url = git@heroku.com:deep-water.git
+            fetch = +refs/heads/*:refs/remotes/heroku/*
+
+Nowe przykłady wrzucamy na heroku w taki sposób:
+
+    git push heroku master
