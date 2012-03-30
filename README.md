@@ -32,3 +32,12 @@ Install *Serve* with [NPM](http://npmjs.org/):
 ### Git Tips
 
 * [How to „Merge” Specific Files from Another Branch](http://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/)
+
+Merging changes from the master branch:
+
+    git checkout vibrant-ink
+    git checkout master README.md
+    git status
+    git diff --cached
+    // git add README.md, git add --interactive
+    
