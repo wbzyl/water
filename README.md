@@ -28,3 +28,7 @@ and start coding!
 Install *Serve* with [NPM](http://npmjs.org/):
 
     npm install -g serve
+    
+### Git Tips
+
+* [How to „Merge” Specific Files from Another Branch](http://jasonrudolph.com/blog/2009/02/25/git-tip-how-to-merge-specific-files-from-another-branch/)
