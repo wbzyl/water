@@ -21,7 +21,7 @@ function animate() {
   d3.select(this)
     .transition()
     .duration(getRandom(2000, 5000))
-    .attr('fill',getRandomColor)
+    .attr('fill', getRandomColor)
     .delay(100)
     .attr("cx", getRandom(0, imgWidth))
     .attr("cy", getRandom(0, imgHeight))
