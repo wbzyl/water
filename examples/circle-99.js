@@ -23,8 +23,8 @@ function animate() {
     .duration(getRandom(2000, 5000))
     .attr('fill',getRandomColor)
     .delay(100)
-    .attr("cx", getRandom(0,imgWidth))
-    .attr("cy", getRandom(0,imgHeight))
+    .attr("cx", getRandom(0, imgWidth))
+    .attr("cy", getRandom(0, imgHeight))
     .attr("r",  getRandom(minCircleR, maxCircleR));
 }
 
