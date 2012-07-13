@@ -7,6 +7,8 @@ Code modifications are instantly displayed - no need to refresh your browser.
 Based on Gabriel Florit's <a href='https://github.com/gabrielflorit/water'>Water</a>
 live coding sketchpad (**<a href='http://gabrielflor.it/water'>original water</a>**)
 
+* [livecoding](http://livecoding.gabrielflor.it/3072416) – v0.1
+
 The beautiful code editor, <a href='http://ace.ajax.org/'>Ace</a>, is an open source project by Ajax.org.
 
 ### Setup
